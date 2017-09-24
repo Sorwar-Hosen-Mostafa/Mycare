@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/prescription_image"
+            android:layout_width="match_parent"
+            android:src="@drawable/prescription_icon"
+            android:layout_height="match_parent"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/row_name_tv"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="top"
+                android:text="Dr. Aziz"/>
+
+            <TextView
+                android:id="@+id/row_date_tv"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="Date: 12-05-20107"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>

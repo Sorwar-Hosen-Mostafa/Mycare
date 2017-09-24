@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/doctor_list"
+        android:icon="@drawable/doctor_icon"
+        android:title="Doctor List">option1
+    </item>
+        </group>
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/prescription_list"
+        android:icon="@drawable/prescription_icon"
+        android:title="Prescription List">option2
+    </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings_icon"
+        android:title="Settings">option3
+    </item>
+
+    </group>
+
+</menu>

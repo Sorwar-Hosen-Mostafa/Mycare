@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    tools:context="com.bitm.mycare.RegistrationActivity">
+    <include layout="@layout/toolbar" android:id="@id/toolbar"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight=".5"
+            android:textColor="@color/colorPrimary"
+            android:text="REGISTRATION"
+            android:gravity="center"
+
+            />
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingBottom="5dp"
+            float:fletTextAppearance="@style/floatedlabelapparence"
+            android:layout_weight=".8"
+            >
+            <EditText
+                android:id="@+id/registration_user_name_et"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/border_edittext"
+                android:layout_height="match_parent"
+                android:hint="Name"
+                />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingBottom="5dp"
+            float:fletTextAppearance="@style/floatedlabelapparence"
+            android:layout_weight=".8"
+            >
+            <EditText
+                android:id="@+id/registration_user_email_et"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/border_edittext"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            float:fletPaddingLeft="10dp"
+            float:fletPaddingBottom="5dp"
+            float:fletTextAppearance="@style/floatedlabelapparence"
+            android:layout_weight=".8"
+            >
+            <EditText
+                android:id="@+id/registration_user_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border_edittext"
+                android:hint="password"
+                android:paddingRight="10dp"
+                android:inputType="textPassword"
+                />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".05"
+            android:background="@drawable/border_button"
+            android:text="Create Account"
+            android:onClick="singupconfirm"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

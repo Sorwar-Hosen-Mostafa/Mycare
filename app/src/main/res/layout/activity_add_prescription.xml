@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bitm.mycare.AddPrescription">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/add_prescription_image_thumbnail"
+            android:src="@mipmap/ic_launcher"/>
+        <Button
+            android:id="@+id/takepicturebtn"
+            android:layout_weight="1.2"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border_button"
+            android:text="Take Prescription Picture"
+            android:onClick="takeimagefromcamera"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Doctor Name:"/>
+            <EditText
+                android:id="@+id/doctor_name_et"
+                android:layout_width="0dp"
+                android:enabled="false"
+                android:gravity="center"
+                android:theme="@style/Theme.App.Base"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Speciality:"/>
+            <EditText
+                android:id="@+id/doctor_speciality_et"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:enabled="false"
+                android:theme="@style/Theme.App.Base"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Date:"/>
+            <Button
+                android:id="@+id/select_date_btn"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:text="select date"
+                android:onClick="selectdate"
+                android:background="@drawable/border_button"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Description:"/>
+            <EditText
+                android:id="@+id/prescription_description_et"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:theme="@style/Theme.App.Base"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border_button"
+            android:layout_marginBottom="10dp"
+            android:text="Save Prescription"
+            android:onClick="savePrescription"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

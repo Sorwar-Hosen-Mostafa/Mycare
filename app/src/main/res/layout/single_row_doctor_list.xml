@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/PImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/doctor_icon"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:paddingLeft="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/doctor_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="top"
+
+            android:layout_weight="2"
+
+            android:text="DR abdul khan"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/doctor_speciality_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Medicine"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/last_visited_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="last visited:"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
